@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fullstack-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fullstack
+  template:
+    metadata:
+      labels:
+        app: fullstack
+    spec:
+      containers:
+        - name: fullstack
+          image: YOUR_DOCKER_USERNAME/fullstack-k8s-one-docker:v1
+          ports:
+            - containerPort: 5000
