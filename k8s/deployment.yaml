@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: fullstack
-          image: YOUR_DOCKER_USERNAME/fullstack-k8s-one-docker:v1
+          image: janakiraman0207/fullstack-k8s-one-docker:v1
           ports:
             - containerPort: 5000
